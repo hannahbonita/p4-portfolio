@@ -1,0 +1,72 @@
+/* Your Website Styles */
+
+
+
+/* Gallery Stying */
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+
+@-webkit-keyframes slidy {
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+@keyframes slidy {
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+body, figure { 
+  margin: 0; background: white;
+  font-family: Poiret One, sans-serif;
+  font-weight: 100;
+}
+div#captioned-gallery { 
+  width: 100%; overflow: hidden; 
+}
+h1 {
+  text-align: center;
+  color: #A2C27A;
+}
+figure.slider { 
+  position: relative; width: 500%;
+  font-size: 0; 
+
+  -webkit-animation: 12s slidy infinite;
+  animation: 12s slidy infinite; 
+}
+figure.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100%; height: auto; }
+figure.slider figure figcaption { 
+  position: absolute; bottom: 0;
+  background: rgba(0,0,0,0.3);
+  color: #fff; width: 100%;
+  font-size: 2rem; padding: .6rem; 
+}
+
+a:link {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:visited {
+  color: #A2C27A;
+}
+
+a:hover {
+  color: #F12E1A;
+  font-weight: bold;
+}
